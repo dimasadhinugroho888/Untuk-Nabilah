@@ -4,83 +4,125 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Semangat untuk Nabilah Azzahra 💖</title>
+
+  <!-- Google Font & Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
   <style>
+    :root {
+      --pink1: #ffdde1;
+      --pink2: #ee9ca7;
+      --white-glass: rgba(255, 255, 255, 0.2);
+      --shadow: 0 8px 32px rgba(0,0,0,0.2);
+    }
+
     body {
-      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
-      height: 100vh;
       margin: 0;
-      overflow: hidden;
+      padding: 0;
+      background: linear-gradient(135deg, var(--pink1), var(--pink2));
+      min-height: 100vh;
       display: flex;
-      justify-content: center;
       align-items: center;
-      text-align: center;
+      justify-content: center;
       font-family: 'Poppins', sans-serif;
       color: #fff;
+      overflow-x: hidden;
     }
 
-    .card {
-      background: rgba(255, 255, 255, 0.15);
-      border-radius: 20px;
-      backdrop-filter: blur(10px);
-      padding: 35px;
+    .card-romantic {
+      background: var(--white-glass);
+      backdrop-filter: blur(15px);
+      border-radius: 25px;
+      box-shadow: var(--shadow);
+      padding: 2rem 2.2rem;
       width: 90%;
       max-width: 420px;
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      animation: zoomIn 3s ease-in-out infinite alternate;
+      text-align: center;
+      animation: fadeIn 1.2s ease;
     }
 
-    @keyframes zoomIn {
-      from { transform: scale(1); }
-      to { transform: scale(1.05); }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.1rem;
-      line-height: 1.5;
-      margin: 5px 0;
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
     }
 
     .foto {
-      margin: 20px auto;
+      margin: 1.2rem auto;
       border-radius: 20px;
-      border: 3px solid #fff;
-      width: 280px;
-      height: 380px;
-      object-fit: cover;
-      background: rgba(255, 255, 255, 0.2) url('foto-nabilah.jpg') center/cover no-repeat;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      border: 3px solid rgba(255,255,255,0.8);
+      width: 100%;
+      max-width: 300px;
+      aspect-ratio: 3/4;
+      background: var(--white-glass) url('foto-nabilah.jpg') center/cover no-repeat;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      animation: float 5s ease-in-out infinite alternate;
+    }
+
+    @keyframes float {
+      from { transform: translateY(0); }
+      to { transform: translateY(-10px); }
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 0.6rem;
     }
 
     .heart {
       position: absolute;
-      color: #ff4d6d;
-      font-size: 20px;
-      animation: float 6s linear infinite;
+      color: #fff;
+      font-size: 1.2rem;
+      animation: floatUp linear forwards;
       opacity: 0.7;
     }
 
-    @keyframes float {
+    @keyframes floatUp {
       0% { transform: translateY(0) scale(1); opacity: 1; }
       100% { transform: translateY(-100vh) scale(1.5); opacity: 0; }
+    }
+
+    footer {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.85);
+      margin-top: 1rem;
+      font-weight: 500;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      p { font-size: 0.95rem; }
+      .card-romantic { padding: 1.8rem; }
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 1.8rem; }
+      p { font-size: 0.9rem; }
+      .foto { max-width: 240px; }
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Hai Nabilah Azzahra 💕</h1>
+
+  <div class="card-romantic">
+    <h1>Untukmu, Nabilah 💕</h1>
     <div class="foto"></div>
-    <p>Setiap kali kamu tersenyum, dunia terasa lebih tenang.</p>
-    <p>Kamu mungkin lelah hari ini, tapi jangan lupa... kamu luar biasa 🤍</p>
-    <p>Jangan pernah ragu sama diri sendiri — kamu kuat, kamu hebat, dan kamu pantas bahagia.</p>
-    <p>Aku di sini selalu percaya sama kamu, Nabilah 🌸</p>
-    <p>Teruslah bersinar, karena cahaya kamu gak akan pernah padam ✨</p>
+
+    <p>Hei <strong>Nabilah Azzahra</strong> — kamu hebat, bahkan di saat kamu gak menyadarinya.</p>
+    <p>Setiap langkah kecilmu punya arti besar. Jangan berhenti ya, aku selalu percaya padamu 🤍</p>
+    <p>Kamu pantas bahagia, pantas dicintai, dan pantas untuk sukses besar 💫</p>
+    <p>Teruslah bersinar, karena dunia jadi lebih indah dengan senyummu 🌷</p>
+
+    <footer>— Dari seseorang yang diam-diam kagum padamu 💌</footer>
   </div>
 
   <!-- Efek hati beterbangan -->
@@ -91,11 +133,13 @@
       heart.classList.add('heart');
       heart.innerHTML = '❤';
       heart.style.left = Math.random() * 100 + 'vw';
-      heart.style.animationDuration = (3 + Math.random() * 5) + 's';
+      heart.style.fontSize = (10 + Math.random() * 18) + 'px';
+      heart.style.animationDuration = (3 + Math.random() * 4) + 's';
       body.appendChild(heart);
-      setTimeout(() => heart.remove(), 8000);
+      setTimeout(() => heart.remove(), 7000);
     }
     setInterval(createHeart, 400);
   </script>
+
 </body>
 </html>
